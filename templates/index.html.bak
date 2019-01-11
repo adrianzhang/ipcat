@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <html lang="en">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+  </head>
+  <body>
+      {{user_ip}}
+          <pre>
+          from flask import Flask, render_template, request
+          # Initialize the Flask application
+          app = Flask(__name__)
+          # Default route, print user's IP ，http://www.361way.com
+          @app.route('/')
+          def index():
+            ip = request.remote_addr
+            return render_template('index.html', user_ip=ip)
+          </pre>
+  </body>
+</html>
