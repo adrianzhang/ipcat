@@ -1,10 +1,11 @@
 # ipcat
-A very simple web service that return source IP address of request
+**A very simple web service that return source IP address of request**
+Normally used to create your own *showing me my IP* web service, which to answer **what is my IP?**
 
-Usage:
+## Usage:
 clone the source to your server which ip is $SERVER-IP and then run command:
-    './launch-web.sh &'
+    `./launch-web.sh &`
 
-Test:
+## Test:
 From another computer run:
-    'curl http://$SERVER-IP:8888
+    `curl http://$SERVER-IP:8888`
